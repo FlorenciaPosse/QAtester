@@ -55,5 +55,5 @@ Se probó la **API del formulario de contacto** y se validó el correcto almacen
 
 ## 👩‍💻 Autora
 **Florencia Raquel Posse – QA Trainee**  
-[🔗 LinkedIn](www.linkedin.com/in/florenciaraquelposse)
+[🔗 LinkedIn](https://www.linkedin.com/in/florenciaraquelposse)
 
