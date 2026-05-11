@@ -1,26 +1,29 @@
 body {
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: black;
   margin: 0;
+  line-height: 1.7;
 }
 
 header {
   background-color: rgb(244, 194, 194);
   color: #4a4a4a;
-  padding: 5rem;
+  padding:4rem 2rem;
   text-align: center;
 }
 
 main {
-  padding: 5rem;
+  padding: 3rem 2rem;
   text-align: left;
+  max-width: 1100px;
+  margin: auto;
 }
 
 nav {
   text-align: center;
   width:100%;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 nav ul {
@@ -31,13 +34,13 @@ nav ul {
 }
 
 nav ul li {
-  display: inline-block;
-  margin: 0rem;
+ display: inline-block;
+  margin: 0.5rem;
   font-size: 1rem;
-  padding: 1rem;
-  border-radius: 0.5rem;
+  padding: 0.9rem 1.5rem;
+  border-radius: 2rem;
   transition: all 0.3s ease;
-  cursor: pointer;
+  cursor: pointer
 }
 
 nav ul li:hover {
@@ -45,9 +48,8 @@ nav ul li:hover {
 }
 
 nav ul li:active {
-  background-color: #b76e79; 
+   background-color: #b76e79;
   color: white;
-  border-radius: 2rem; 
   transform: scale(0.97);
 }
 
@@ -55,19 +57,21 @@ nav ul li:active {
 @media (max-width: 768px) {
   nav ul li {
     display: block;
-    margin: 0.8rem 0;
+    margin: 0.8rem auto;
+    width: 80%;
   }
 }
 
 h1 {
   font-family: Sofia;
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 p {
-  font-size: 1rem;
-  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
 }
 
 a {
@@ -80,12 +84,12 @@ a:hover {
 }
 
 section {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
   color: #b76e79;
 }
 
@@ -102,8 +106,9 @@ select {
   padding: 1rem;
   margin-bottom: 1.5rem;
   border: 1px solid #ccc;
-  border-radius: 0.5rem;
+  border-radius: 0.8rem;
   background-color: #fdf2f4;
+  font-size: 1rem;
 }
 
 button {
@@ -112,29 +117,34 @@ button {
   background-color: #d8a7b1;
   color: #5c4b51;
   border: none;
-  border-radius: 0.5rem;
-  font-size: 1rem
+  border-radius: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 footer {
-  margin-top: 2rem;
-  padding: 1rem;
-  font-size: 0.9rem;
+   margin-top: 3rem;
+  padding: 2rem;
+  font-size: 1rem;
   color: #8a6f75;
   text-align: center;
+  background-color: #fff1f2;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-  table-layout: fixed; /* CLAVE */
+  table-layout: fixed;
   font-family: Helvetica, sans-serif;
+  margin-top: 2rem;
 }
 
 th, td {
-  border: 1px solid #ddd;
-  padding: 6px;
-  font-size: 14px;
+   border: 1px solid #ddd;
+  padding: 12px;
+  font-size: 1rem;
+  text-align: center;
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
@@ -144,7 +154,7 @@ thead {
 }
 
 /* Móvil */
-@media (max-width: 768px) {
+@media (max-width: 768px)) {
   th, td {
     font-size: 12px;
     padding: 4px;
