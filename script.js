@@ -15,11 +15,7 @@ function enviarFormulario(event) {
     subject: document.getElementById('asunto').value, //campo subject de la api, se obtiene del input del formulario con id asunto
     message: document.getElementById('mensaje').value //campo message de la api, se obtiene del input del formulario con id mensaje
   }
-    if (nombre.value.trim() === '') {
-    formMessage.innerText = 'El campo nombre debe ser rellenado.';
-    nombre.focus();
-    return false;
-    }    
+   
         if (email.value.trim() === '') {
     formMessage.innerText = 'El campo email debe ser rellenado.';
     email.focus();
