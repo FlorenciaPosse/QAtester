@@ -35,9 +35,22 @@ nav ul li {
   margin: 0rem;
   font-size: 1rem;
   padding: 1rem;
-  border-radius: 0.5rem ;
-
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
+
+nav ul li:hover {
+  background-color: #f4d6d6;
+}
+
+nav ul li:active {
+  background-color: #b76e79; 
+  color: white;
+  border-radius: 2rem; 
+  transform: scale(0.97);
+}
+
 /* Menú vertical en móvil */
 @media (max-width: 768px) {
   nav ul li {
