@@ -1,13 +1,13 @@
 body {
-  font-family: Verdana, Arial, sans-serif;
-  font-size: 1rem;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
   color: black;
   margin: 0;
 }
 
 header {
-  background-color: rgb(7, 167, 153);
-  color: white;
+  background-color: rgb(244, 194, 194);
+  color: #4a4a4a;
   padding: 5rem;
   text-align: center;
 }
@@ -57,7 +57,7 @@ p {
 }
 
 a {
-  color: #02524e;
+  color:#b76e79;
   text-decoration: none;
 }
 
@@ -72,7 +72,7 @@ section {
 h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #34495e;
+  color: #b76e79;
 }
 
 /* FORMULARIO */
@@ -89,14 +89,14 @@ select {
   margin-bottom: 1.5rem;
   border: 1px solid #ccc;
   border-radius: 0.5rem;
-  background-color: #fdfdfd;
+  background-color: #fdf2f4;
 }
 
 button {
   width: 100%;
   padding: 1rem;
   background-color: #02463a;
-  color: white;
+  color: #fdecef;
   border: none;
   border-radius: 0.5rem;
   font-size: 1rem;
@@ -106,7 +106,7 @@ footer {
   margin-top: 2rem;
   padding: 1rem;
   font-size: 0.9rem;
-  color: #777;
+  color: #8a6f75;
   text-align: center;
 }
 
@@ -114,7 +114,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   table-layout: fixed; /* CLAVE */
-  font-family: Arial, sans-serif;
+  font-family: Helvetica, sans-serif;
 }
 
 th, td {
@@ -126,7 +126,7 @@ th, td {
 }
 
 thead {
-  background-color: #f4f4f4;
+  background-color: #fdecef;
 }
 
 /* Móvil */
