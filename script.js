@@ -50,12 +50,7 @@ function enviarFormulario(event) {
     mensaje.focus();
     return false;
     } 
-      var data = {
-    name: nombre.value,
-    email: email.value,
-    subject: asunto.value,
-    message: mensaje.value
-  };
+  
   postAPI(data);
   
   formMessage.innerText =
