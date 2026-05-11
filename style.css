@@ -95,11 +95,11 @@ select {
 button {
   width: 100%;
   padding: 1rem;
-  background-color: #02463a;
-  color: #fdecef;
+  background-color: #d8a7b1;
+  color: #5c4b51;
   border: none;
   border-radius: 0.5rem;
-  font-size: 1rem;
+  font-size: 1rem
 }
 
 footer {
