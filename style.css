@@ -134,6 +134,72 @@ thead {
   th, td {
     font-size: 12px;
     padding: 4px;
+  }  
+    flores {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.flores span {
+  position: absolute;
+  top: -10%;
+  font-size: 2rem;
+  animation: caer 10s linear infinite;
+}
+
+.flores span:nth-child(1) {
+  left: 10%;
+  animation-duration: 8s;
+}
+
+.flores span:nth-child(2) {
+  left: 30%;
+  animation-duration: 12s;
+}
+
+.flores span:nth-child(3) {
+  left: 50%;
+  animation-duration: 10s;
+}
+
+.flores span:nth-child(4) {
+  left: 70%;
+  animation-duration: 14s;
+}
+
+.flores span:nth-child(5) {
+  left: 90%;
+  animation-duration: 9s;
+}
+
+@keyframes caer {
+  0% {
+    transform: translateY(-100px) rotate(0deg);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+  @media (max-width: 600px) {
+  .flores span {
+    font-size: 1.1rem;
+  }
+
+  .flores span:nth-child(n+5) {
+    display: none; /* menos flores para rendimiento */
+  }
   }
 }
 
