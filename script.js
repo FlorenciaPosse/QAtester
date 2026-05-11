@@ -15,7 +15,51 @@ function enviarFormulario(event) {
     subject: document.getElementById('asunto').value, //campo subject de la api, se obtiene del input del formulario con id asunto
     message: document.getElementById('mensaje').value //campo message de la api, se obtiene del input del formulario con id mensaje
   }
+    if (nombre.value.trim() === '') {
+    formMessage.innerText = 'El campo nombre debe ser rellenado.';
+    nombre.focus();
+    return false;
+    }    
+        if (email.value.trim() === '') {
+    formMessage.innerText = 'El campo email debe ser rellenado.';
+    email.focus();
+    return false;
+  }
+   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (!emailRegex.test(email.value)) {
+    formMessage.innerText = 'Introduce un email válido.';
+    email.focus();
+    return false;
+  }
+   if (asunto.value === '') {
+    formMessage.innerText = 'Debes seleccionar un asunto.';
+    asunto.focus();
+    return false;
+  }
+    if (mensaje.value.trim() === '') {
+    formMessage.innerText = 'El mensaje debe ser rellenado.';
+    mensaje.focus();
+    return false;
+  }
+  const palabras = mensaje.value.trim().split(/\s+/);
+
+  if (palabras.length > 500) {
+    formMessage.innerText =
+      'El mensaje no puede superar las 500 palabras.';
+    mensaje.focus();
+    return false;
+    } 
+      var data = {
+    name: nombre.value,
+    email: email.value,
+    subject: asunto.value,
+    message: mensaje.value
+  };
   postAPI(data);
+  
+  formMessage.innerText =
+    'Formulario enviado correctamente.'
 
    return false;
 }
@@ -23,14 +67,14 @@ function enviarFormulario(event) {
 function mostrarMensajeExito(){
   var formMessage = document.getElementById('formMessage'); //id del elemento de la pagina donde se va a mostrar mensaje
   formMessage.textContent = "Formulario enviado correctamente"; //mensaje que va a mostrarse
-  formMessage.style.color  = "green"; //color en el que se va a mostrar
+  formMessage.style.color  = "pink"; //color en el que se va a mostrar
 };
 
 //5. CAMBIA SI QUIERES EL MENSAJE QUE MUESTRA AL ENVIAR EL FORMULARIO (OPCIONAL) 
 function mostrarMensajeError(){
   var formMessage = document.getElementById('formMessage'); //id del elemento de la pagina donde se va a mostrar el mensaje
   formMessage.textContent = "Error al enviar el formulario"; //mensaje que va a mostrarse
-  formMessage.style.color  = "red"; //color en el que se va a mostrar
+  formMessage.style.color  = "pink"; //color en el que se va a mostrar
 };
 
 //FUNCION GENERICA PARA ENVIAR DATOS A UNA API POST Y MOSTRAR UN MENSAJE DE ERROR O EXITO. NO NECESITAS CAMBIAR NADA, FUNCIONA SIEMPRE.
