@@ -134,7 +134,8 @@ thead {
   th, td {
     font-size: 12px;
     padding: 4px;
-  }  
+  } 
+  }
     flores {
   position: fixed;
   top: 0;
@@ -198,7 +199,7 @@ thead {
   }
 
   .flores span:nth-child(n+5) {
-    display: none; /* menos flores para rendimiento */
+    display: none; 
   }
   }
 }
