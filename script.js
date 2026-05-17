@@ -18,10 +18,6 @@ function enviarFormulario(event) {
    
   postAPI(data);
   
-  formMessage.innerText =
-    'Formulario enviado correctamente.'
-
-   return false;
 }
 //4. CAMBIA SI QUIERES EL MENSAJE QUE MUESTRA AL ENVIAR EL FORMULARIO (OPCIONAL) 
 function mostrarMensajeExito(){
