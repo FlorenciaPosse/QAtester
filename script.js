@@ -16,37 +16,6 @@ function enviarFormulario(event) {
     message: document.getElementById('mensaje').value //campo message de la api, se obtiene del input del formulario con id mensaje
   }
    
-        if (email.value.trim() === '') {
-    formMessage.innerText = 'El campo email debe ser rellenado.';
-    email.focus();
-    return false;
-  }
-   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-  if (!emailRegex.test(email.value)) {
-    formMessage.innerText = 'Introduce un email válido.';
-    email.focus();
-    return false;
-  }
-   if (asunto.value === '') {
-    formMessage.innerText = 'Debes seleccionar un asunto.';
-    asunto.focus();
-    return false;
-  }
-    if (mensaje.value.trim() === '') {
-    formMessage.innerText = 'El mensaje debe ser rellenado.';
-    mensaje.focus();
-    return false;
-  }
-  const palabras = mensaje.value.trim().split(/\s+/);
-
-  if (palabras.length > 500) {
-    formMessage.innerText =
-      'El mensaje no puede superar las 500 palabras.';
-    mensaje.focus();
-    return false;
-    } 
-  
   postAPI(data);
   
   formMessage.innerText =
