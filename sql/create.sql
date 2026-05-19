@@ -1,4 +1,4 @@
-CREATE TABLE usuarios(
+CREATE TABLE formflorenciaposse(
 id SERIAL PRIMARY KEY,
 name VARCHAR(100),
 email VARCHAR (100),
