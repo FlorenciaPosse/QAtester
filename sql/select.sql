@@ -6,5 +6,5 @@ SELECT * FROM formflorenciaposse WHERE age BETWEEN 20 AND 30;
 SELECT * FROM formflorenciaposse WHERE subject IN ('job', 'information');
 SELECT * FROM formflorenciaposse WHERE name IN ('maria', 'ana');
 SELECT * FROM formflorenciaposse WHERE email LIKE '%gmail%' AND subject = 'job';
-SELECT * FROM formflorenciaposse WHERE age > 30 AND message LIKE '%test%';
+SELECT * FROM formflorenciaposse WHERE age >=30 AND message LIKE '%test%';
 SELECT * FROM formflorenciaposse ORDER BY email ASC;
